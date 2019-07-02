@@ -1,0 +1,6 @@
+/* arrange frogs equally spaced */
+
+.frog-container {
+    display: flex;
+    align-content: space-between
+}
