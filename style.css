@@ -1,6 +1,79 @@
-/* arrange frogs equally spaced */
+.container {
+    background: #91ecff;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    float: left;
+}
 
-.frog-container {
+.lilypads {
+    width: 100px;
+    height: 50px;
+    background: #52d358;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+.water {
+    width: 100%;
+    height: 30px;
+    background: #4a62ec;
+    bottom: 0;
+    position: absolute;
+}
+
+/* .frog-container {
     display: flex;
     align-content: space-between
+} */
+
+.frog {
+    width: 100px;
+    height: 100px;
+    background: #fd4d3f;
+    border-radius: 100px;
+    bottom: 50px; /* 50px from the bottom of the screen */
+    left: 50%;
+    position: absolute;
 }
+
+/* Explanation of hue-rotate
+    I am using a CSS filter to change the color of the frog instead of manually changing in Photoshop
+    and having 7 different frog images
+    In this folder, I have an color wheel demonstrating
+*/
+#red-frg {
+    filter: hue-rotate(5deg);
+}
+
+#org-frg {
+    filter: hue-rotate(30deg);
+}
+
+#ylw-frg {
+    filter: hue-rotate(50deg);
+}
+
+#grn-frg {
+    filter: hue-rotate(100deg);
+}
+
+#blu-frg {
+    filter: hue-rotate(180deg);
+}
+
+#ind-frg {
+    filter: hue-rotate(240deg);
+}
+
+#prp-frg {
+    filter: hue-rotate(27deg);
+}
+
+#pnk-frg {
+    filter: hue-rotate(300deg);
+}
+
+/* https://www.quackit.com/css/functions/css_hue-rotate_function.cfm */

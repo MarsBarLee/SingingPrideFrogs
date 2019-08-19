@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Singing Frogs</title>
 </head>
 <body>
+    <!-- Background -->
+    <div class="container">
     <!-- Instructions -->
-    <!-- Background, Water, Sky -->
-    <!-- Lilypads -->
+
     <!-- Frogs -->
-    <div class='frog-container'>
-        <div id='red-frog' class='frog' data-key="65" data-note="C"></div> data-note>IMG of FROG</div>
-        <div id='org-frog' class='frog' data-key="83" data-note="D">IMG of FROG</div>
-        <div id='ylw-frog' class='frog' data-key="68" data-note="E">IMG of FROG</div>
-        <div id='grn-frog' class='frog' data-key="70" data-note="F">IMG of FROG</div>
-        <div id='blu-frog' class='frog' data-key="74" data-note="G">IMG of FROG</div>
-        <div id='prp-frog' class='frog' data-key="75" data-note="A">IMG of FROG</div>
-        <div id='wht-frog' class='frog' data-key="76" data-note="B">IMG of FROG</div>
-        <div id='brn-frog' class='frog' data-key="186" data-note="C">IMG of FROG</div>
+        <div class='frog-container'>
+            <div id='red-frg' class='frog' data-key="65"><!-- <img src="frog.png"> --></div>
+            <!-- <div id='org-frg' class='frog' data-key="83"><img src="frog.png"></div>
+            <div id='ylw-frg' class='frog' data-key="68"><img src="frog.png"></div>
+            <div id='grn-frg' class='frog' data-key="70"><img src="frog.png"></div>
+            <div id='blu-frg' class='frog' data-key="74"><img src="frog.png"></div>
+            <div id='ind-frg' class='frog' data-key="75"><img src="frog.png"></div>
+            <div id='prp-frg' class='frog' data-key="76"><img src="frog.png"></div>
+            <div id='pnk-frg' class='frog' data-key="186"><img src="frog.png"></div> -->
+        </div>
     <!-- using data-* attribute to embed custom data that doesn't have any visual representation
     This data can then be used in the page's JavaScript (without any Ajax calls(asynchronous HTTP) or server-side database queries)
     Qn: How is data-* different from using a class?
@@ -28,15 +31,22 @@
             frogs.dataset.key
             frogs.dataset.note
     -->
+    <!-- Lilypads -->
+    <div class="lilypads"></div>
 
-    <audio data-key="65" src="sounds/c.mp4"></audio>
-    <audio data-key="83" src="sounds/d.mp4"></audio>
-    <audio data-key="68" src="sounds/e.mp4"></audio>
-    <audio data-key="70" src="sounds/f.mp4"></audio>
-    <audio data-key="74" src="sounds/g.mp4"></audio>
-    <audio data-key="75" src="sounds/a.mp4"></audio>
-    <audio data-key="76" src="sounds/b.mp4"></audio>
-    <audio data-key="186" src="sounds/highc.mp4"></audio>
+    <!-- Water -->
+    <div class="water"></div>
+
+    <!-- Audio -->
+    <audio data-key="65" src="sounds/c.mp3"></audio>
+    <!-- <audio data-key="83" src="sounds/d.mp3"></audio>
+    <audio data-key="68" src="sounds/e.mp3"></audio>
+    <audio data-key="70" src="sounds/f.mp3"></audio>
+    <audio data-key="74" src="sounds/g.mp3"></audio>
+    <audio data-key="75" src="sounds/a.mp3"></audio>
+    <audio data-key="76" src="sounds/b.mp3"></audio>
+    <audio data-key="186" src="sounds/highc.mp3"></audio> -->
+    
     </div>
     <script src="main.js"></script>
 </body>
